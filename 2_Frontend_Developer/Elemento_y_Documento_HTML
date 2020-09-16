@@ -1,0 +1,21 @@
+Anatomía de un elemento HTML***
+#Etiqueta Apertura# <h1> CONTENIDO </h1>#Etiqueta de cierre# : Forman un elemento
+Atributo***
+<h1 class="saludo"> --> Class es el atributo y "saludo" es el vaor del atributo que están dentro de la etiqueta de apertura
+En HTML es importante tomar en cuenta el anidamiento:
+<ul>
+	<li>Nota 1</li>
+	<li>Nota 2</li>
+	<li>Nota 3</li>
+</ul>
+ Elementos vacíos***
+ <img src="url/imagen" alt="mi imagen"> --> la etiquita alt dice l usuario "que es lo que debía renderizar"
+Anatomía de un documento HTML***
+Abreviatura: html:5 Nos crea la estructura htlm
+Etiquetas semánticas**  
+<nav></nav> Colocar enlace de navegacion
+<article></artice> Contenido que vive o puede vivir independiente del resto de contenido
+<section></section> Colocamos el contenido de las secciones de nuestra página
+<aisde></aside> No agrega cotenido a nuestra págino, si se elimina no importa. Ejemplo: Publicidad
+<ol></ol> Lista ordenada
+<ul></ul> lista desordenada

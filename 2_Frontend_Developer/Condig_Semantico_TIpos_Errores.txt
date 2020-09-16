@@ -1,0 +1,10 @@
+Código Semático***
+<header><nav><article>
+<i>texto</i> tipo italico
+<em>texto</em>relevancia que se le da a las palabras
+
+Tipos de Errores
+HTML es un lenguaje interpretado--
+Errores sintacticos: Errors de escritura en el código y evita que elprograma funciona
+Errores lógicos: Sinaxis correcta pero el código no hace lo que debería. El programa funciona pero de forma incorrecta
+Sistema de validación de etiquietas -> validator.w3.org
