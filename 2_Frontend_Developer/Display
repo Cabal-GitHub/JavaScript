@@ -1,0 +1,12 @@
+Display block -->de arriba abajo
+Display:inline --> izquierda a derecha
+Display:inline-block --> igual a la anterior pero respetnado width y height
+Display:none--> Oculta elementos sin eliminarlos por completo
+Display:table --> Igual que un elemento <table>
+Display:flex --> centro contenedor y alinea
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Display:grid --> Mejor sistema de layout y se aplica en el elemento contenedor padre o hijo
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+
+

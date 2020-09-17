@@ -1,0 +1,41 @@
+Anatomia de una declaracion CSS
+P->Selector {
+ color:red; --> propiedades
+ }
+ Selectores:
+ * --> Universal
+ *{
+  margin:0
+ }
+ tipo --> h1, p, title
+ clase --> .saludo
+ .saludo {
+front-sie:zem;
+ }
+ id --> #id
+ #id{
+ }
+ Pseudo-clases***
+ Estilos espeficiocos para cada etiquieta
+ Pseudos-elementos***
+ ::before ::after ::need_more
+ developer.mozilla.org --> pseudo clases y pseudo elementos
+ 
+ Modelo de caja****
+ Margin-->Border-->Padding-->800x600px (height and width)
+ todo dentro de una .clase
+ padding: se suma al height & width
+ border: se suma tambien
+ box.sizing: border-box --> hacec que se junte con el padding
+ margin: separa los componentes y se puede agregar valores en sentido de la manecilla del reloj
+ colorhubt.co
+ 
+ Unidades de medida absolutas y relativas
+ Absolutas:
+ cm mm in px pc pt
+ no dependen de nadie
+ Relativas:
+ porcentaje, em, ch
+ son dependiente de otro elemento, por eso son relativas a otro elemento
+ 
+ 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*Pseudo elemento sin formula*/
+    /*p:first-child { Esta pseudo clase cambia el color al primer farrafo declarado
+        color: red;
+    }
+    p:last-child { Esta pseudo clase cambia el color al ultimo farrafo declarado
+        color: brown;
+    }
+    */
+    /*pseudo-elementos con formuas*/
+    /* p:nth-child(2n) { /* n es un número entero ordinario 1st, 2nd
+        color: burlywood; /* 2x0(n), esto es para cambiar parrafos pares
+    }
+    p:nth-child(2n+1) { /* 2x0(n) + 1, esto es para cambiar parrafos impares
+        color:red;
+        }
+    */
+    p::first-letter{
+        color: red;
+        font-size: 20px;
+    }
+
+</style>
+<body>
+    <p>😶 triste </p>
+    <p>😱 asustado</p>
+    <p>😖 adolorido</p>
+    <p>Adolorido</p>
+    
+</body>
+</html>
