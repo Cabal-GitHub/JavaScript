@@ -3,27 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <style>
     body {
         margin: 0;
+        background-color: #ffeadb;
+        font-family: 'Amatic SC', cursive;
     }
-    header{
+    .header{
         width: 100%;
         height: 80px;
         background-color: #ffeadb;
+        display: flex;
+        justify-content: space-between; /*agrega espacio entre los 2 elementos, la img header_img y el div header__menu*/
+        align-items: center;
     }
-    header img {
+    .header__img {
         width: 50px;
-        margin-top: 5px;
+        height: 60px;
+        margin-top: 0px;
         margin-left: 10px;
     }
-</style>
+    .header__menu {
+        margin-right: 20px;
+    }
+    .header__menu ul {
+        display: none; /*No se muestre*/
+        list-style: none; /*para sacar los puntos de la lista*/
+        padding: 0px; /*ppor defecto lo agarran pero se lo vamos a quitar*/
+        position: absolute; /*para posicionarlo en relacion al pader*/
+        width: 100px;
+        text-align: right; /*para aliniear a la derecha*/
+        margin: 0px 0px 0px -26px; /*se quita el margen y aliniarse al perfil*/
+    }
+    .header__menu:hover ul, ul:hover {
+        display: block; /*Muestrese las ul que no se muestran*/
+    }
+    .header__menu li {
+        margin: 10px 0px; /*Separamos los li*/
+    }
+    .header__menu li a {
+        color: black; /*color */
+        text-decoration: none; /*Elimina el subrayado del los <a> en las palabras*/
+    }
+    .header__menu--profile {
+        margin-right: 10px;
+        display:flex;
+        align-items: center;
+    }
+    .header__menu--profile img {
+        margin-right: 8px;
+        width: 40px;
+        display:flex;
+    }
+    .header__menu--profile p {
+        margin:0px;
+        color: black;
+    }
+    </style>
 <body>
-    <header>
-        <img src="img/EC_alvd_logo.png" alt="">
-
+    <header class="header">
+        <img class="header__img" src="img/EC_alvd_logo.png" alt="">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="img/icons8-usuario-masculino-64.png" alt="user">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar Sesión</a></li>
+            </ul>
+        </div>
     </header>
     
 </body>

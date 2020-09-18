@@ -1,0 +1,47 @@
+Arquitectura CSS***
+Ojetivos:
+ Predecible (la regla hace lo que se dice)
+ Reutilizable (evitar reescribir codigo)
+ Mantenible ()
+ Escalable
+Buenas Practicas:
+ Establecer reglas
+ Explicar  las estructuras base
+ Establecer estandares de codificacion
+ Evitar largas hojas de estilo
+ Documentacion (en cosas dificiles de entender)
+
+OOCSS, BEM, SMACSS, ITCSS y Atomic Design
+OOCSS:
+ https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/
+ CSS orientado a objeto
+ Separa lo que es el diseño del contenido
+ para reutiliar mejor nuestro codigo
+BEM:
+ http://getbem.com/introduction/
+ Block Element Modify
+ Separa lo bloques, los elementos y modificadores
+     <header class="header">
+        <button class="header__button--red">RED</button>
+        <button class="header__button--greem">GREEM</button>
+    </header>
+SMACSS
+ http://smacss.com/
+ Arquitectura de CSS Ecalable y Modular
+ Usa 5 pasos:
+ 1:Definir los componectes bases o elemntos a estar 
+ utilizando como lo botones
+ 2:Layout, son los elementos que se usan en la pagina una sola
+ vez com el header o footer
+ 3:Module, son componens que estariamos utiliazndo en la 
+ aplicacion más de una vez
+ 4: State, son las acciones que se pueden ver reflejadas despues
+ de una accion, ejemplo tocar un boton y este cambia de rojo
+ a verder
+ 5: Theme, que todo cambie al cambiar el tema
+ITCSS
+ https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+ Especificicidad: Elementos o clases con más valor que otros
+ATOMIC DESIGN
+ https://bradfrost.com/blog/post/atomic-web-design/
+ Atomos, modulo, organismismo, template y paginas
