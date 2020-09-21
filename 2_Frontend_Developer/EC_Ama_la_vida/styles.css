@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background-color: #ffeadb;
+    font-family: 'Amatic SC', cursive;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #ffeadb;
+    display: flex;
+    justify-content: space-between; /*agrega espacio entre los 2 elementos, la img header_img y el div header__menu*/
+    align-items: center;
+}
+.header__img {
+    width: 50px;
+    height: 60px;
+    margin-top: 0px;
+    margin-left: 10px;
+}

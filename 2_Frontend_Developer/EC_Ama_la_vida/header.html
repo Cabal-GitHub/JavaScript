@@ -62,6 +62,29 @@
         margin:0px;
         color: black;
     }
+    .main {
+        height: 30px;
+    }
+    .main__title {
+        color: black;
+        font-size: 30px;
+    }
+    .input {
+        background-color: rgba(255, 255, 255, 0.1);/*La transparencia en el input*/
+        border: 2px solid black;
+        border-radius: 25px ; /*Esquinas redondeadas*/
+        color: black;
+        font-family: 'Amatic SC', cursive; /*Tipo de letra al escribir*/
+        font-size: 16px;
+        height: 50px; 
+        padding: 0px 20px;
+        width: 70%; /*En valor relativo para que se adapte al 70% de la pantalla*/
+        outline: none;/*Para quitarle el borde que aparece cuando al presionar en el buscador*/
+    }
+    ::placeholder { /*Peseudo elemnto para agregarle color a las letras del placeholder (buscar)*/
+        color: black;
+    }
+
     </style>
 <body>
     <header class="header">
@@ -77,6 +100,9 @@
             </ul>
         </div>
     </header>
-    
+    <section class="main">
+        <h2 class="main__title">¿Que deseas buscar?</h2>
+        <input class="input" type="text" placeholder="Buscar...">
+    </section>
 </body>
 </html>
