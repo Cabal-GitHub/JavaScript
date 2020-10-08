@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background-color: #ffeadb;
+    font-family: 'Amatic SC', cursive;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #ffeadb;
+    display: flex;
+    justify-content: space-between; /*agrega espacio entre los 2 elementos, la img header_img y el div header__menu*/
+    align-items: center;
+}
+.header__img {
+    width: 50px;
+    height: 60px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.header__menu {
+    margin-right: 20px;
+}
+.header__menu ul {
+    display: none; /*No se muestre*/
+    list-style: none; /*para sacar los puntos de la lista*/
+    padding: 0px; /*ppor defecto lo agarran pero se lo vamos a quitar*/
+    position: absolute; /*para posicionarlo en relacion al pader*/
+    width: 100px;
+    text-align: right; /*para aliniear a la derecha*/
+    margin: 0px 0px 0px -26px; /*se quita el margen y aliniarse al perfil*/
+}
+.header__menu:hover ul, ul:hover {
+    display: block; /*Muestrese las ul que no se muestran*/
+}
+.header__menu li {
+    margin: 10px 0px; /*Separamos los li*/
+}
+.header__menu li a {
+    color: black; /*color */
+    text-decoration: none; /*Elimina el subrayado del los <a> en las palabras*/
+}
+.header__menu--profile {
+    margin-right: 10px;
+    display:flex;
+    align-items: center;
+}
+.header__menu--profile img {
+    margin-right: 8px;
+    width: 40px;
+    display:flex;
+}
+.header__menu--profile p {
+    margin:0px;
+    color: black;
+}
+.main {
+    height: 30px;
+}
+.main__title {
+    color: black;
+    font-size: 30px;
+}
+.input {
+    background-color: rgba(255, 255, 255, 0.1);/*La transparencia en el input*/
+    border: 2px solid black;
+    border-radius: 25px ; /*Esquinas redondeadas*/
+    color: black;
+    font-family: 'Amatic SC', cursive; /*Tipo de letra al escribir*/
+    font-size: 16px;
+    height: 50px; 
+    padding: 0px 20px;
+    width: 70%; /*En valor relativo para que se adapte al 70% de la pantalla*/
+    outline: none;/*Para quitarle el borde que aparece cuando al presionar en el buscador*/
+}
+::placeholder { /*Peseudo elemnto para agregarle color a las letras del placeholder (buscar)*/
+    color: black;
+}
+.categories__title {
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    padding-left: 30px;
+    width: 100%;
+}
+.carousel {
+    width: 100%;
+    overflow: scroll; /*Scroll a la derecha e izquierda*/
+    padding: 30px; /*para que no esté pegado a borde*/
+    position: relative; /*Todos los elementos dentro de carousel se posicionan en funcion a carousel*/
+} 
+.carousel__container {
+    white-space: nowrap; /*para que se ordenen horizontalmente y no se vayan hacia abajo los elementos (videos)*/
+    margin: 70px 0px; /*70 arriba y abajo y 0 a los lados*/
+    padding-bottom: 10px; /*Para que al mostrar la preview de la imagen no se corte abajo*/
+}
+.carousel-item {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block; /*Par evitar que cada item se agregue uno abajo del otro, por defecto viene Display:block*/
+    cursor: pointer; /*Para que se vea una mano cuando pasamos por e item*/
+    transition: 450ms all; /*Para que al pasar de una imagen a otra (items) sea más lento*/
+    transform-origin: center left; /*Para que no se nos salga la animación de nuestros items*/
+    position: relative;
+}
+.carousel-item:hover ~ .carousel-item{
+    transform: translate3d(100px, 0, 0);
+}
+.carousel__container .carousel-item {
+    opacity: 0.3; /*para reducion la opacidad de los items*/
+}
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5); /*Para icrementarse el tramaño de la imagen cuando pase el mouse por ahí (por defecto vienen en 1)*/
+    opacity: 1;
+}
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.carousel-item__details  {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.carousel-item__details:hover{
+    opacity: 1;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+
+}
+.footer a {
+    color:black;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
